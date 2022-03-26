@@ -1,7 +1,7 @@
 *** Settings ***
 Resource			base.robot
 
-Test Setup			Cria sessão
+Test Setup			Nova sessão
 Test Teardown		Encerra sessão
 
 *** Test Cases ***
