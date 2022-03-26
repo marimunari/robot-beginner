@@ -1,16 +1,16 @@
 *** Settings ***
-Resource				base.robot
+Resource			base.robot
 
-Test Setup			Open session
-Test Teardown		Close session
+Test Setup			Cria sessão
+Test Teardown		Encerra sessão
 
 *** Test Cases ***
-Selecting by ID 
-		Go To														${url}/radios
-		Select Radio Button							movies		cap
-		Radio Button Should Be Set To		movies		cap
+Selecionando por ID
+	Go To								${url}/radios
+	Select Radio Button					movies				cap
+	Radio Button Should Be Set To		movies				cap
 
-Selecting by value
-		Go To														${url}/radios
-		Select Radio Button							movies		guardians
-		Radio Button Should Be Set To		movies		guardians
+Selecionando por value
+	Go To								${url}/radios
+	Select Radio Button					movies				guardians
+	Radio Button Should Be Set To		movies				guardians

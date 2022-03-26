@@ -5,10 +5,10 @@ Library		SeleniumLibrary
 ${url}		https://training-wheels-protocol.herokuapp.com
 
 *** Keywords ***
-Open session
-		Open Browser									${url}							chrome
+Nova sessão
+	Open Browser					${url}				chrome
 
-Close session
-		Sleep 												2
-		Capture Page Screenshot
-		Close Browser
+Encerra sessão
+	Sleep 							2
+	Capture Page Screenshot
+	Close Browser
